@@ -278,7 +278,7 @@ E declare a dependência:
 
 ```xml
 <dependency>
-    <groupId>com.github.alexyamoraes</groupId>
+    <groupId>com.github.stuffalex</groupId>
     <artifactId>validador-documentos</artifactId>
     <version>v1.0.0</version>
 </dependency>
@@ -302,7 +302,7 @@ Crie ou edite o arquivo `~/.m2/settings.xml`:
   <servers>
     <server>
       <id>github</id>
-      <username>alexyamoraes</username>
+      <username>stuffalex</username>
       <password>SEU_GITHUB_PERSONAL_ACCESS_TOKEN</password>
     </server>
   </servers>
@@ -324,7 +324,7 @@ Adicione o repositório no `pom.xml`:
 <repositories>
     <repository>
         <id>github</id>
-        <url>https://maven.pkg.github.com/alexyamoraes/validador-documentos</url>
+        <url>https://maven.pkg.github.com/stuffalex/validador-documentos</url>
     </repository>
 </repositories>
 ```
@@ -345,7 +345,7 @@ E a dependência:
 
 Para publicar no **Maven Central**:
 1. Cadastre-se no [Central Portal Sonatype](https://central.sonatype.com).
-2. Valide o domínio ou namespace `com.github.alexyamoraes`.
+2. Valide o domínio ou namespace `com.github.stuffalex`.
 3. Configure o plugin `maven-gpg-plugin` para assinar os artefatos com sua chave GPG.
 4. Execute `mvn clean deploy` apontando para o portal Central.
 
@@ -367,7 +367,7 @@ Execute no terminal dentro da pasta do projeto:
 cd /home/alexya/Documentos/Projetos/validador-documentos
 
 # Adicionar o endereço remoto do seu repositório no GitHub
-git remote add origin https://github.com/alexyamoraes/validador-documentos.git
+git remote add origin git@github.com:stuffalex/validador-documentos.git
 
 # Definir a branch principal como main
 git branch -M main
